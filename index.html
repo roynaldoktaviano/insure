@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/style.css">
   <title>Frontend Mentor | Insure landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,8 +17,41 @@
   </style>
 </head>
 <body>
+  <!-- START : Header -->
+  <header class="header">
+    <nav class="flex flex-jc-sb flex-ai-c container container-px">
+      <a href="#">
+        <img src="./images/logo.svg" alt="">
+      </a>
 
-  How we work
+      <!-- START : Hamburger Icon -->
+      <div class="header-hamburger hide-desktop open">
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <!-- END : Hamburger Icon -->
+
+      <!-- START : Link Navbar -->
+      <div class="header-menu hide-mobile">
+        <a href="#">HOW WE WORK</a>
+        <a href="#">BLOG</a>
+        <a href="#">ACCOUNT</a>
+        <button>VIEW PLAN</button>
+      </div>
+      <!-- END : Link Navbar -->
+    </nav>
+  </header>
+  <!-- END : Header -->
+
+
+
+
+
+
+  <!-- How we work
   Blog
   Account
   View plans
@@ -75,12 +109,13 @@
 
   Careers
   Press
-  Licenses
+  Licenses -->
 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/roynaldoktaviano">Roynald Oktaviano</a>.
   </div>
+  <script src="./app/js/script.js "></script>
 </body>
 </html>
