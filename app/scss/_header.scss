@@ -22,10 +22,41 @@
             background: black;
             height: 2px;
             width: 16px;
+            transition: 0.2s ease-in-out;
             // margin: 0 auto;
+
+            &:nth-child(2) {
+                position: absolute;
+            }
     
-            &:not(:last-child){
+            &:not(:last-child, :nth-child(2)){
                 margin-bottom: 3px;
+            }
+        }
+    }
+    .open {
+        a {
+            span {
+                &:first-child {
+                    top: -60px;
+                    opacity: 0;
+                }
+
+                &:nth-child(2){
+                    transform-origin: center;
+                    transform: rotate(45deg);
+                    margin: 0;
+                }
+
+                &:nth-child(3){
+                    transform-origin: center;
+                    transform: rotate(-45deg);
+                    margin: 0;
+                }
+                &:nth-child(4){
+                    bottom: -60px;
+                    opacity: 0;
+                }
             }
         }
     }

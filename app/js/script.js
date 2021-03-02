@@ -1,5 +1,9 @@
-const hamburger = document.querySelector('.hamburger')
+const hamburger = document.querySelector('.header-hamburger');
 
-hamburger.addEventListener("click", function(){
-    hamburger.src = ".../../images/icon-close.svg"
+hamburger.addEventListener("click",function(){
+    if(hamburger.classList.contains('open')){
+        hamburger.classList.remove('open');
+    } else {
+        hamburger.classList.add('open');
+    }
 })
