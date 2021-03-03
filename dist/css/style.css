@@ -176,10 +176,17 @@
 
 .header-menu a {
   font-size: 0.875rem;
+  font-weight: 700;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .header-menu a:not(:last-child) {
   margin-right: 1.5625rem;
+}
+
+.header-menu a:not(:last-child):hover {
+  color: black;
 }
 
 html {
@@ -240,6 +247,13 @@ button, .button {
   font-family: 'Karla', sans-serif;
   border: solid 2px black;
   padding: 0.625rem 1.75rem;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+button:hover, .button:hover {
+  background-color: black;
+  color: #fafafa;
 }
 
 .container {

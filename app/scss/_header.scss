@@ -43,13 +43,15 @@
             top: 7rem;
             text-align: center;
 
-            a{
+            a {
                 display: block;
                 color: $veryLightGray;
                 font-weight: 700;
                 margin-bottom: 2.1875rem;
                 font-size: 1.125rem;
                 letter-spacing: 2px;
+
+            
             }
 
             .mobile-button {
@@ -104,8 +106,14 @@
     &-menu {
         a {
             font-size: 0.875rem;
+            font-weight: 700;
+            transition: 0.2s ease-in-out;
             &:not(:last-child){
                 margin-right: 1.5625rem;
+
+                &:hover {
+                    color: black;
+                }
             }
         }
     }

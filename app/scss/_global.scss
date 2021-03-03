@@ -47,6 +47,12 @@ button, .button {
     font-family: 'Karla', sans-serif;
     border: solid 2px black;
     padding: 0.625rem 1.75rem;
+    transition: 0.25s ease-in-out;
+
+    &:hover {
+        background-color: black;
+        color: $veryLightGray;
+    }
 }
 
 .container {
