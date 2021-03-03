@@ -139,7 +139,7 @@
   position: relative;
   padding-top: 0.9375rem;
   padding-bottom: 0.9375rem;
-  background-color: #fafafa;
+  background-color: white;
 }
 
 .header-hamburger {
@@ -179,14 +179,20 @@
   font-weight: 700;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  margin-right: 1.875rem;
 }
 
-.header-menu a:not(:last-child) {
+.header-menu a:not(:nth-child(3)) {
   margin-right: 1.5625rem;
 }
 
-.header-menu a:not(:last-child):hover {
+.header-menu a:hover {
   color: black;
+}
+
+.hero {
+  background-color: #2d2640;
+  color: #fafafa;
 }
 
 html {
