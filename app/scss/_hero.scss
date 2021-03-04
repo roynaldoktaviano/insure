@@ -3,6 +3,11 @@
     color: $veryLightGray;
     overflow-x: hidden;
 
+    @include breakpoint-up(large){
+        display: flex;
+        align-items: center;
+    } 
+
     &-content {
         text-align: center;
         background: url(../../images/bg-pattern-intro-left-mobile.svg);
@@ -35,10 +40,11 @@
         background-image: url(../../images/image-intro-desktop.jpg);
         background-position: top center;
         background-repeat: no-repeat;
+        flex: 2;
     }
 
     &-text {
-        
+        flex: 1;
         h1 {
             margin-bottom: 7%;
         }

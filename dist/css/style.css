@@ -352,6 +352,17 @@ h1 {
   overflow-x: hidden;
 }
 
+@media (min-width: 64em) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .hero-content {
   text-align: center;
   background: url(../../images/bg-pattern-intro-left-mobile.svg);
@@ -383,6 +394,15 @@ h1 {
   background-image: url(../../images/image-intro-desktop.jpg);
   background-position: top center;
   background-repeat: no-repeat;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.hero-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .hero-text h1 {
