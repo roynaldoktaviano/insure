@@ -18,6 +18,10 @@ body {
     width: 100%;
     font-family: 'Karla', sans-serif;
     overflow-x: hidden;
+
+    @include breakpoint-up(large){
+        overflow: visible;
+    }
 }
 
 .no-scroll {
