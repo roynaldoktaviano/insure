@@ -37,6 +37,7 @@
         background-position: center bottom;
         background-repeat: no-repeat;
         background-size: contain;
+        z-index: 98;
         
         .mobile-link {
             position: relative;
@@ -70,6 +71,7 @@
         padding-top: 0.9375rem;
         padding-bottom: 0.9375rem;
         background-color: white;
+        z-index: 99;
     }
 
     &-hamburger {

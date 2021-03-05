@@ -2,6 +2,10 @@ html {
     font-size: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
     
 }
 
@@ -16,10 +20,6 @@ body {
     width: 100%;
     font-family: 'Karla', sans-serif;
     overflow-x: hidden;
-
-    &.no-scroll {
-        overflow: hidden;
-    }
 }
 
 .flex {
@@ -65,22 +65,30 @@ button, .button {
     margin: 0 auto;
 
     &-pall {
-        padding-top: 6.25rem;
-        padding-bottom: 6.25rem;
+        padding-top: 3.25rem;
+        padding-bottom: 3.25rem;
         padding-left: 1.4375rem;
         padding-right: 1.4375rem;
         @include breakpoint-up(large){
             padding-left: 10.3125rem;
             padding-right: 10.3125rem;
+            padding-top: 6.25rem;
+            padding-bottom: 6.25rem;
         } 
     }
 
     &-pt {
-        padding-top: 6.25rem;
+        padding-top: 3.25rem;
+        @include breakpoint-up(large){
+            padding-top: 6.25rem;
+        } 
     }
 
     &-pb{
-        padding-bottom: 6.25rem;
+        padding-bottom: 3.25rem;
+        @include breakpoint-up(large){
+            padding-bottom: 6.25rem;
+        } 
     }
 
     &-pl {
@@ -108,8 +116,12 @@ button, .button {
     }
 
     &-py {
-        padding-top: 6.25rem;
-        padding-bottom: 6.25rem;
+        padding-top: 3.25rem;
+        padding-bottom: 3.25rem;
+        @include breakpoint-up(large){
+            padding-top: 6.25rem;
+            padding-bottom: 6.25rem;
+        } 
     }
 }
 
