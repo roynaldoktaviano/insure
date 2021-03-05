@@ -8,6 +8,7 @@
     &-content {
         position: relative;
         text-align: center;
+        padding-bottom: 5.25rem;
 
         h1 {
             position: relative;
@@ -27,16 +28,27 @@
         }
 
         &::before {
-            content: " ";
+            content: "";
             background-image: url(../../images/bg-pattern-intro-left-mobile.svg);
             position: absolute;
             width: 100%;
-            height: 36%;
+            height: 35%;
             background-size: 46%;
             background-position: left;
             background-repeat: no-repeat;
             top: -1%;
             left: 0%;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(../../images/bg-pattern-intro-right-mobile.svg);
+            background-size: 31%;
+            background-repeat: no-repeat;
+
         }
     }
 }

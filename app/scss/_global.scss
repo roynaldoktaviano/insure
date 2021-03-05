@@ -3,9 +3,7 @@ html {
     box-sizing: border-box;
     overflow-x: hidden;
 
-    &.no-scroll {
-        overflow: hidden;
-    }
+    
     
 }
 
@@ -20,6 +18,10 @@ body {
     width: 100%;
     font-family: 'Karla', sans-serif;
     overflow-x: hidden;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 .flex {
