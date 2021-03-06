@@ -243,6 +243,12 @@ h1 {
   line-height: 1;
 }
 
+@media (min-width: 64em) {
+  h1 {
+    font-size: 3.8125rem;
+  }
+}
+
 hr {
   width: 7.5rem;
   margin-left: 0;
@@ -400,7 +406,7 @@ hr {
     position: absolute;
     background-image: url(../../images/bg-pattern-intro-left-desktop.svg);
     background-repeat: no-repeat;
-    width: 12%;
+    width: 13%;
     height: 100%;
     top: 76%;
   }
@@ -528,7 +534,7 @@ hr {
   content: "";
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 110%;
   background-image: url(../../images/bg-pattern-intro-right-mobile.svg);
   background-size: 33%;
   background-repeat: no-repeat;
@@ -558,6 +564,90 @@ hr {
             order: 2;
     text-align: left;
     padding-right: 9%;
+  }
+}
+
+.advantage {
+  margin-top: 4.875rem;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .advantage {
+    margin-top: 3rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 64em) {
+  .advantage {
+    margin-top: 11.875rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .advantage-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.advantage hr {
+  margin-left: auto;
+}
+
+@media (min-width: 40em) {
+  .advantage hr {
+    margin-left: 0;
+  }
+}
+
+.advantage h1 {
+  margin-bottom: 5.3125rem;
+}
+
+@media (min-width: 40em) {
+  .advantage h1 {
+    margin-bottom: 3.3125rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .advantage h1 {
+    margin-bottom: 6.25rem;
+  }
+}
+
+.advantage-item {
+  padding: 0.125rem;
+  margin-bottom: 3.75rem;
+}
+
+.advantage-item h2 {
+  font-weight: normal;
+}
+
+.advantage-item p {
+  line-height: 1.5;
+  color: #837d87;
+}
+
+@media (min-width: 40em) {
+  .advantage-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .advantage-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-right: 5.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

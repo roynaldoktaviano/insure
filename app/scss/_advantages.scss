@@ -1,0 +1,62 @@
+.advantage {
+    margin-top: 4.875rem;
+    text-align: center;
+
+    @include breakpoint-up(medium){
+        margin-top: 3rem;
+        text-align: left;
+    }
+
+    @include breakpoint-up(large){
+        margin-top: 11.875rem;
+    }
+
+    &-items {
+        @include breakpoint-up(medium){
+            display: flex;
+        }
+    }
+
+    hr {
+        margin-left: auto;
+
+        @include breakpoint-up(medium){
+            margin-left: 0;
+        }
+    }
+
+    h1 {
+        margin-bottom: 5.3125rem;
+
+        @include breakpoint-up(medium){
+            margin-bottom: 3.3125rem;
+        }
+
+        @include breakpoint-up(large){
+            margin-bottom: 6.25rem;
+        }
+    }
+
+    &-item {
+        padding: 0.125rem;
+        margin-bottom: 3.75rem;
+        h2 {
+            font-weight: normal;
+        }
+
+        p {
+            line-height: 1.5;
+            color: $darkGrayishViolet;
+        }
+
+        @include breakpoint-up(medium){
+            flex: 1;
+            padding: 1rem;
+        }
+
+        @include breakpoint-up(large){
+            flex: 1;
+            padding-right: 5.5rem;
+        }
+    }
+}
