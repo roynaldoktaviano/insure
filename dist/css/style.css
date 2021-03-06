@@ -631,6 +631,7 @@ hr {
 .advantage-item p {
   line-height: 1.5;
   color: #837d87;
+  font-size: 1.0625rem;
 }
 
 @media (min-width: 40em) {
@@ -638,7 +639,6 @@ hr {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    padding: 1rem;
   }
 }
 
@@ -647,7 +647,7 @@ hr {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    padding-right: 5.5rem;
+    padding-right: 3.4375rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

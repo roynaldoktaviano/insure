@@ -47,16 +47,17 @@
         p {
             line-height: 1.5;
             color: $darkGrayishViolet;
+            font-size: 1.0625rem;
         }
 
         @include breakpoint-up(medium){
             flex: 1;
-            padding: 1rem;
+            // padding: 1rem;
         }
 
         @include breakpoint-up(large){
             flex: 1;
-            padding-right: 5.5rem;
+            padding-right: 3.4375rem;
         }
     }
 }
