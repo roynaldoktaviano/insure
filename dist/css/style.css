@@ -569,7 +569,7 @@ hr {
 .advantage-item p {
   line-height: 1.5;
   color: #837d87;
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
 }
 
 @media (min-width: 40em) {
@@ -581,7 +581,7 @@ hr {
 @media (min-width: 64em) {
   .advantage-item {
     flex: 1;
-    padding-right: 3.4375rem;
+    padding-right: 2rem;
   }
 }
 
@@ -596,8 +596,26 @@ hr {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 64em) {
+  .workflow-content {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    height: 240px;
+    background-image: url(../../images/bg-pattern-how-we-work-desktop.svg);
+  }
+}
+
 .workflow-content h1 {
   line-height: 1.1;
+}
+
+@media (min-width: 64em) {
+  .workflow-content h1 {
+    flex: 0 0 50%;
+    font-size: 3.3rem;
+  }
 }
 
 .workflow-content .button {
@@ -607,5 +625,14 @@ hr {
   font-size: 0.875rem;
   font-weight: normal;
   padding: 0.75rem;
+}
+
+@media (min-width: 64em) {
+  .workflow-content .button {
+    width: 9.0625rem;
+    height: 2.125rem;
+    font-size: 12px;
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
