@@ -12,24 +12,41 @@
             width: 95%;
             margin: 0 auto;
             border-color: $veryLightGray;
+
+            @include breakpoint-up(large){
+                width: 98%;
+            }
         }
+
+        @include breakpoint-up(large){
+            text-align: left;
+        }
+
     }
 
     &-head {
         img {
             margin-bottom: 1.875rem;
         }
+
+        @include breakpoint-up(large){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 
     &-socmed {
         img {
+            width: 20px;
             margin-bottom: 0;
-            margin-right: 0.9375rem;
+            margin-right: 0.75rem;
         }
         margin-bottom: 40px;
     }
 
     &-item {
+        font-size: 12px;
         font-weight: 700;
         .title {
             color: $darkGrayishViolet;
@@ -39,6 +56,19 @@
 
         .link {
             color: $darkViolet;
+        }
+    }
+
+    &-items {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include breakpoint-up(medium){
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        @include breakpoint-up(large){
+            grid-template-columns: repeat(4,1fr);
         }
     }
 

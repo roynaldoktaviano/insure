@@ -662,8 +662,28 @@ hr {
   border-color: #fafafa;
 }
 
+@media (min-width: 64em) {
+  .footer-content hr {
+    width: 98%;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer-content {
+    text-align: left;
+  }
+}
+
 .footer-head img {
   margin-bottom: 1.875rem;
+}
+
+@media (min-width: 64em) {
+  .footer-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .footer-socmed {
@@ -671,11 +691,13 @@ hr {
 }
 
 .footer-socmed img {
+  width: 20px;
   margin-bottom: 0;
-  margin-right: 0.9375rem;
+  margin-right: 0.75rem;
 }
 
 .footer-item {
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -687,5 +709,22 @@ hr {
 
 .footer-item .link {
   color: #2d2640;
+}
+
+.footer-items {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 40em) {
+  .footer-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .footer-items {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 /*# sourceMappingURL=style.css.map */
