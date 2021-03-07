@@ -1,0 +1,25 @@
+.workflow {
+    &-content {
+        background-color: $darkViolet;
+        color: white;
+        text-align: center;
+        padding: 4.375rem 2.5rem;
+        background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
+        background-position: top right;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        h1 {
+            line-height: 1.1;
+        }
+
+        .button {
+            color: white;
+            border-color: white;
+            width: 10.0625rem;
+            font-size: 0.875rem;
+            font-weight: normal;
+            padding: 0.75rem;
+        }
+    }
+}
