@@ -643,4 +643,49 @@ hr {
     padding: 0;
   }
 }
+
+.footer {
+  background-image: url(../../images/bg-pattern-footer-mobile.svg);
+  background-color: #fafafa;
+  background-repeat: no-repeat;
+}
+
+.footer-content {
+  text-align: center;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.footer-content hr {
+  width: 95%;
+  margin: 0 auto;
+  border-color: #fafafa;
+}
+
+.footer-head img {
+  margin-bottom: 1.875rem;
+}
+
+.footer-socmed {
+  margin-bottom: 40px;
+}
+
+.footer-socmed img {
+  margin-bottom: 0;
+  margin-right: 0.9375rem;
+}
+
+.footer-item {
+  font-weight: 700;
+}
+
+.footer-item .title {
+  color: #837d87;
+  margin-top: 2.8125rem;
+  margin-bottom: 1.875rem;
+}
+
+.footer-item .link {
+  color: #2d2640;
+}
 /*# sourceMappingURL=style.css.map */
