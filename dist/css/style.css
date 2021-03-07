@@ -600,7 +600,8 @@ hr {
   .workflow-content {
     display: flex;
     text-align: left;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0;
     align-items: center;
     height: 240px;
     background-image: url(../../images/bg-pattern-how-we-work-desktop.svg);
@@ -614,7 +615,8 @@ hr {
 @media (min-width: 64em) {
   .workflow-content h1 {
     flex: 0 0 50%;
-    font-size: 3.3rem;
+    font-size: 3rem;
+    padding-right: 9%;
   }
 }
 
@@ -625,6 +627,12 @@ hr {
   font-size: 0.875rem;
   font-weight: normal;
   padding: 0.75rem;
+}
+
+.workflow-content .button:hover {
+  background-color: #fff;
+  color: #2d2640;
+  font-weight: 700;
 }
 
 @media (min-width: 64em) {
