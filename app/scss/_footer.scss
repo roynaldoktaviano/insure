@@ -2,6 +2,13 @@
     background-image: url(../../images/bg-pattern-footer-mobile.svg);
     background-color: $veryLightGray;
     background-repeat: no-repeat;
+    padding-top: 1.5625rem; 
+    padding-bottom: 1.5625rem; 
+    margin-top: 6.25rem;
+    
+    @include breakpoint-up(medium) {
+        background-image: url(../../images/bg-pattern-footer-desktop.svg);
+    }
 
     &-content {
         text-align: center;  
@@ -29,7 +36,7 @@
             margin-bottom: 1.875rem;
         }
 
-        @include breakpoint-up(large){
+        @include breakpoint-up(medium){
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -37,10 +44,19 @@
     }
 
     &-socmed {
-        img {
-            width: 20px;
+        svg {
             margin-bottom: 0;
             margin-right: 0.75rem;
+        }
+
+        a {
+            svg path {
+                transition: 0.2s ease-in-out;
+            }
+    
+            &:hover svg path {
+                fill: $darkViolet;
+            }
         }
         margin-bottom: 40px;
     }
@@ -48,6 +64,22 @@
     &-item {
         font-size: 12px;
         font-weight: 700;
+        text-align: center;
+
+        a {
+            display: block;
+            margin: 0.75rem auto;
+            width: fit-content;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            @include breakpoint-up(medium){
+                margin: 12px 0;
+            }
+        }
+
         .title {
             color: $darkGrayishViolet;
             margin-top: 2.8125rem;
@@ -56,6 +88,10 @@
 
         .link {
             color: $darkViolet;
+        }
+
+        @include breakpoint-up(medium){
+            text-align: left;
         }
     }
 
